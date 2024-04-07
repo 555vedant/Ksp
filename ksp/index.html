@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cover page</title>
+    <style>
+        body {
+            background-image: url("bg.png");
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            background-color: #044caa;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button:hover{
+            background-color: #0078d4;
+        }
+        .prediction, .analysis {
+            display: inline-block;
+            margin: 0 100px; /* This will create a gap of 20px between the two elements */
+        }
+        img {
+            width: 250px;
+            display: block; /* This will allow the <br> to push the button below the image */
+            margin: 0 auto 10px; /* This centers the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Team VPY</h1>
+        <h2>Accidental Data Analysis</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="prediction">
+            <img src="./prediction.png" alt="Prediction">
+            <a href="./predict.html" class="button">Prediction</a>
+        </div>
+        <div class="analysis">
+            <img src="./analysis.png" alt="Analysis">
+            <a href="./analysis.html" class="button">Analysis</a>
+        </div>
+    </div>
+</body>
+</html>
