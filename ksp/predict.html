@@ -59,7 +59,7 @@ div {
     
     <h1>Accident Prediction</h1>
     <h2>Enter Below Details</h2>
-
+    <!-- <button id="location" onclick=getLocation()>Get Location</button> -->
     <div>
     <form action="/predict" method="POST">
         <!-- <label for="weather">Weather:</label>
@@ -140,9 +140,41 @@ div {
         <input type="text" id="NUmber Of Vehicals" name="Number Of Vehicals"><br><br>
 
         <br>
+        
+        <label for="Latitude">Latitude:</label>
+        <input type="text" id="Latitude" name="Latitude" id="latitude"><br><br>
 
+        <br>
+
+        <label for="Longitude">Longitude:</label>
+        <input type="text" id="Longitude" name="Longitude" id="longitude"><br><br>
+
+        <br>
+        <input type="button" value="Live Location" onclick="initMap()"><br><br>
+
+        <br>
         <input type="submit" value="Submit">
     </form>
 </div>
+<!-- <script>
+// const x = document.getElementById("location");
+ const longitude = document.getElementById("longitude");
+
+ const latitude = document.getElementById("latitude");
+
+// x.addEventListener("onclick", function(e) {
+//     e.preventdefault();
+//   // Your function code goes here
+//   getLocation();
+// });//comment down
+
+
+
+
+
+</script> -->
+
+
+
 </body>
 </html>
